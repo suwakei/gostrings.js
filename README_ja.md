@@ -12,7 +12,7 @@
 [![npm version](https://badge.fury.io/js/gostrings.js.svg)](https://badge.fury.io/js/gostrings.js)
 [![npm downloads](https://img.shields.io/npm/dm/gostrings.js)](https://www.npmjs.com/package/gostrings.js)
 
-`gostrings.js` は、Go言語の標準ライブラリ `strings` パッケージにインスパイアされた、JavaScript向けの軽量かつ強力な文字列操作ユーティリティライブラリです。Goのシンプルで直感的なAPIをJavaScriptの世界にもたらし、文字列処理をより効率的かつ読みやすくすることを目指しています。
+`gostrings.js` は、Go言語の標準ライブラリ `strings` にインスパイアされた、TypeScript向けの軽量かつ非依存の文字列操作ユーティリティライブラリです。Goのシンプルで直感的なAPIをTypeScriptに持ち込み、効率的で読みやすい文字列処理を可能にします。
 
 ## ✨ 特徴
 

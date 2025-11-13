@@ -12,7 +12,7 @@
 [![npm version](https://badge.fury.io/js/gostrings.js.svg)](https://badge.fury.io/js/gostrings.js)
 [![npm downloads](https://img.shields.io/npm/dm/gostrings.js)](https://www.npmjs.com/package/gostrings.js)
 
-`gostrings.js` is a lightweight yet powerful string manipulation utility library for JavaScript, inspired by Go's standard library `strings` package. It aims to bring Go's simple and intuitive API design to the JavaScript world, making string processing more efficient and readable.
+`gostrings.js` is a lightweight, dependency-free string utility library for TypeScript, inspired by Go's standard `strings` package. It brings Go's simple and intuitive API to TypeScript, enabling efficient and readable string manipulation.
 
 ## ✨ Features
 
