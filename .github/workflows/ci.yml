@@ -24,6 +24,7 @@ jobs:
           node-version: 20
           cache: "npm"
           registry-url: "https://registry.npmjs.org/"
+          auth-token: ${{ secrets.NPM_TOKEN }} # ← これで自動的に .npmrc が作られる
 
       - name: Install dependencies
         run: npm ci
@@ -37,11 +38,8 @@ jobs:
       - name: Run tests
         run: npm run test
 
-      - name: Configure npm auth
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-
       - name: Publish to npm
         if: startsWith(github.ref, 'refs/tags/v')
         run: |
-          echo "Publishing version $(node -p "require('./package.json').version") to npm"
+          echo "Publishing version $(node -p "require('./package.json').version")"
           npm publish --access public
