@@ -8,7 +8,12 @@
  * @param n The maximum number of replacements.
  * @returns The modified string.
  */
-export function replace(s: string, oldStr: string, newStr: string, n: number): string {
+export function replace(
+  s: string,
+  oldStr: string,
+  newStr: string,
+  n: number,
+): string {
   if (oldStr === "" || n === 0) {
     return s;
   }

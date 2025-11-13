@@ -1,4 +1,4 @@
-export { StringBuilder } from "./builder.js";
+export { StringsBuilder } from "./builder.js";
 export * from "./compare.js";
 export * from "./contains.js";
 export * from "./containsAny.js";
@@ -13,6 +13,8 @@ export * from "./lastIndexOf.js";
 export * from "./join.js";
 export * from "./map.js";
 export * from "./repeat.js";
+export { Reducer, type Reducer as ReducerType } from "./reducer.js";
+export { Replacer } from "./replacer.js";
 export * from "./replace.js";
 export * from "./replaceAll.js";
 export * from "./split.js";

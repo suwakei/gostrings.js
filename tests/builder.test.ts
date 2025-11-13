@@ -1,22 +1,22 @@
 import { describe, it, expect } from "vitest";
-import { StringBuilder } from "../src/builder";
+import { StringsBuilder } from "../src/builder";
 
 describe("StringBuilder", () => {
   it("should be empty initially", () => {
-    const sb = new StringBuilder();
+    const sb = new StringsBuilder();
     expect(sb.String()).toBe("");
     expect(sb.len()).toBe(0);
   });
 
   it("should write a string", () => {
-    const sb = new StringBuilder();
+    const sb = new StringsBuilder();
     sb.writeString("hello");
     expect(sb.String()).toBe("hello");
     expect(sb.len()).toBe(5);
   });
 
   it("should write multiple strings", () => {
-    const sb = new StringBuilder();
+    const sb = new StringsBuilder();
     sb.writeString("hello");
     sb.writeString(" ");
     sb.writeString("world");
@@ -25,14 +25,14 @@ describe("StringBuilder", () => {
   });
 
   it("should write a rune", () => {
-    const sb = new StringBuilder();
+    const sb = new StringsBuilder();
     sb.writeRune("a");
     expect(sb.String()).toBe("a");
     expect(sb.len()).toBe(1);
   });
 
   it("should write multiple runes", () => {
-    const sb = new StringBuilder();
+    const sb = new StringsBuilder();
     sb.writeRune("a");
     sb.writeRune("b");
     sb.writeRune("c");
@@ -41,7 +41,7 @@ describe("StringBuilder", () => {
   });
 
   it("should handle mixed writes of strings and runes", () => {
-    const sb = new StringBuilder();
+    const sb = new StringsBuilder();
     sb.writeString("hello ");
     sb.writeRune("w");
     sb.writeString("orld");
@@ -50,7 +50,7 @@ describe("StringBuilder", () => {
   });
 
   it("should reset the builder", () => {
-    const sb = new StringBuilder();
+    const sb = new StringsBuilder();
     sb.writeString("some data");
     sb.reset();
     expect(sb.String()).toBe("");

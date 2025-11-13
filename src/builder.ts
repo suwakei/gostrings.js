@@ -1,8 +1,8 @@
 /**
- * StringBuilder is used to efficiently build a string.
+ * StringsBuilder is used to efficiently build a string.
  * It's a TypeScript implementation inspired by Go's `strings.Builder`.
  */
-export class StringBuilder {
+export class StringsBuilder {
   private buf = "";
   private length = 0;
 
