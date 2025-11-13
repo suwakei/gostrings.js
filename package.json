@@ -1,0 +1,33 @@
+{
+  "name": "gostrings.js",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "author": "suwakei",
+  "license": "ISC",
+  "description": "Go-like strings utilities for Node.js (TypeScript, dependency-free)",
+  "keywords": [
+    "go",
+    "strings",
+    "typescript",
+    "utility",
+    "nodejs",
+    "dependency-free"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "fmt": "prettier . --write",
+    "fmt:check": "prettier --check .",
+    "test": "vitest",
+    "bench": "vitest bench",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.8"
+  }
+}

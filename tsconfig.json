@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    /* Type Checking */
+    "strict": true, // すべての厳格な型チェックオプションを有効にします
+    "noImplicitAny": true, // 'any'型が暗黙的に指定されるとエラーを報告します
+    "strictNullChecks": true, // nullおよびundefinedをより厳格に扱います
+    "strictFunctionTypes": true, // 関数のパラメータ型を共変ではなく反変として扱います
+    "strictPropertyInitialization": true, // クラスのプロパティがコンストラクタで初期化されていることを確認します
+    "noImplicitThis": true, // 'this'の型が不明確な場合にエラーを報告します
+    "alwaysStrict": true, // 各ソースファイルで'use strict'を常に出力します
+    "noUnusedLocals": true, // 未使用のローカル変数を報告します
+    "noUnusedParameters": true, // 未使用のパラメータを報告します
+    "noImplicitReturns": true, // 関数内のすべてのコードパスが値を返すわけではない場合にエラーを報告します
+    "noFallthroughCasesInSwitch": true, // switch文のフォールスルーをエラーとして扱います
+
+    /* Modules */
+    "module": "NodeNext", // 最新のNode.jsがサポートするECMAScriptモジュール構文を使用します
+    "moduleResolution": "NodeNext", // モジュールの解決方法を指定します
+    "esModuleInterop": true, // CommonJSとESモジュール間の相互運用性を向上させます
+    "resolveJsonModule": true, // .jsonファイルのインポートを許可します
+
+    /* Emit */
+    "declaration": true, // 対応する'.d.ts'ファイルを生成します
+    "declarationMap": true, // '.d.ts'ファイルに対応するソースマップを生成します
+    "sourceMap": true, // 対応する'.js.map'ファイルを生成します
+    "outDir": "./dist", // 出力ディレクトリを指定します
+    "removeComments": false, // コンパイル時にコメントを削除しません
+
+    /* JavaScript Support */
+    "allowJs": true, // JavaScriptファイルのコンパイルを許可します
+    "checkJs": true, // .jsファイルに対しても型チェックを行います
+
+    /* Language and Environment */
+    "target": "ES2022", // TypeScriptをコンパイルするECMAScriptのバージョンを指定します
+    "lib": ["ES2022", "DOM"], // コンパイルに含めるライブラリファイルを指定します
+
+    /* Completeness */
+    "skipLibCheck": true, // すべての宣言ファイル（*.d.ts）の型チェックをスキップします
+    "forceConsistentCasingInFileNames": true // ファイル名の大文字小文字を区別します
+  },
+  "include": ["src/**/*"], // コンパイル対象のファイルが含まれるディレクトリ
+  "exclude": ["node_modules", "dist"] // コンパイルから除外するディレクトリ
+}

@@ -1,0 +1,31 @@
+# テスト関連
+tests/
+test/
+__tests__/
+
+# 開発用設定ファイル
+.eslintrc.js
+.prettierrc
+.stylelintrc
+*.config.js
+
+# ビルド成果物（npm パッケージとしては必要ない場合）
+src/
+coverage/
+dist/   # ビルド済みファイルを含める場合は除外しない
+build/
+out/
+tmp/
+.temp/
+
+# IDE / エディタ設定
+.vscode/
+.idea/
+
+# ドキュメント
+*.md
+.DS_Store
+
+# 環境変数ファイル
+.env
+.env.*.local
