@@ -39,10 +39,6 @@ jobs:
       - name: Run tests
         run: npm run test
 
-      - name: Deploy to JSR
-        if: startsWith(github.ref, 'refs/tags/v')
-        run: npx jsr publish
-
       - name: Deploy to npm
         if: startsWith(github.ref, 'refs/tags/v')
         uses: JS-DevTools/npm-publish@v3
