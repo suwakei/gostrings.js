@@ -6,6 +6,7 @@
   "type": "module",
   "author": "suwakei",
   "license": "ISC",
+  "publishConfig": { "access": "public" },
   "description": "Go-like strings utilities for Node.js (TypeScript, dependency-free)",
   "keywords": [
     "go",
