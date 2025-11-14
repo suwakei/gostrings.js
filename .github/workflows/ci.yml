@@ -24,7 +24,11 @@ jobs:
           node-version: 20
           cache: "npm"
           registry-url: "https://registry.npmjs.org/"
-          auth-token: ${{ secrets.NPM_TOKEN }} # ← これで自動的に .npmrc が作られる
+
+      - name: Set npm token
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Install dependencies
         run: npm ci
