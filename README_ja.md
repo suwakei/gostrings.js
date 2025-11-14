@@ -1,5 +1,9 @@
 # gostrings.js
 
+<a href="https://codecov.io/gh/ns072/gostrings.js"><img src="https://codecov.io/gh/ns072/gostrings.js/branch/main/graph/badge.svg" alt="Codecov"></a>
+
+<br>
+
 <table>
 	<thead>
 		<tr>
@@ -8,9 +12,6 @@
 		</tr>
 	</thead>
 </table>
-
-[![npm version](https://badge.fury.io/js/gostrings.js.svg)](https://badge.fury.io/js/gostrings.js)
-[![npm downloads](https://img.shields.io/npm/dm/gostrings.js)](https://www.npmjs.com/package/gostrings.js)
 
 `gostrings.js` は、Go言語の標準ライブラリ `strings` にインスパイアされた、TypeScript向けの軽量かつ非依存の文字列操作ユーティリティライブラリです。Goのシンプルで直感的なAPIをTypeScriptに持ち込み、効率的で読みやすい文字列処理を可能にします。
 

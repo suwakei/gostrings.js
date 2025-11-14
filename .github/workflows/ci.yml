@@ -39,8 +39,15 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Run tests
-        run: npm run test
+      - name: Run tests with coverage
+        run: npm run cov
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage/**/lcov.info
+          fail_ci_if_error: true
 
       - name: Publish to npm
         if: startsWith(github.ref, 'refs/tags/v')

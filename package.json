@@ -25,9 +25,11 @@
     "fmt:check": "prettier --check .",
     "test": "vitest",
     "bench": "vitest bench",
+    "cov": "npx vitest run --coverage",
     "prepare": "npm run build"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "^4.0.8",
     "eslint": "^9.39.1",
     "prettier": "^3.6.2",
     "typescript": "^5.9.3",
