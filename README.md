@@ -1,6 +1,6 @@
 # gostrings.js
 
-[![Codecov](https://codecov.io/gh/ns072/gostrings.js/branch/main/graph/badge.svg)](https://codecov.io/gh/ns072/gostrings.js)
+[![codecov](https://codecov.io/gh/suwakei/gostrings.js/graph/badge.svg?token=2MFK1XZJ1K)](https://codecov.io/gh/suwakei/gostrings.js)
 
 <br>
 
